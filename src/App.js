@@ -38,11 +38,6 @@ function App() {
           })
         }   
         </ul>
-       
-        {/* <Projects image1={`${Crown}`} Title={Title[0]} />
-        <Projects image2={`${Ecommerce}`} Title={Title[1]} />
-        <Projects image2={`${HealthCare}`} Title={Title[2]} />
-        <Projects image2={'https://thumbs.dreamstime.com/b/projects-concept-black-chalkboard-d-rendering-handwritten-top-view-office-desk-lot-business-office-supplies-79906734.jpg'} /> */}
       </section>
     </div>
   );

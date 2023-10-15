@@ -16,7 +16,7 @@ const theme = createTheme({
 
 const Details = () =>{
     const card = (
-          <CardContent  sx={{ bgcolor: "#94709C", opacity:0.8}}>
+          <CardContent  sx={{ bgcolor: "#7AB2CA", opacity:0.8}}>
             <Typography variant="h2"  color="#000000" gutterBottom>
               Hi, Iam Sarath
             </Typography>
