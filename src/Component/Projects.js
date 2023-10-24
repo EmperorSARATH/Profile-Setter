@@ -6,15 +6,16 @@ import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import { red } from '@mui/material/colors';
+import "../App.css";
 
 const Projects = ({image,Title,desc}) => {
     return (
             <div className="project" >
-            <Card sx={{ maxWidth: 345 }}>
+            <Card sx={{ maxWidth: 345, minHeight: 300, maxHeight: 330, border: '2px solid black' }}>
                 <CardHeader
                     avatar={
-                        <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                            <img src = {image} />
+                        <Avatar sx={{ bgcolor: red[500] }} aria-label="avatar">
+                            <img src = {image} sx={{maxHeight: 300, minHeight:200}} />
                         </Avatar>
                     }
                     title = {Title}
@@ -26,8 +27,8 @@ const Projects = ({image,Title,desc}) => {
                     image={image}
                     alt="Paella dish"
                 />
-                <CardContent>
-                    <Typography variant="body2" color="text.secondary">
+                <CardContent sx={{bgcolor: "#E0E3C5", minHeight: 50, maxHeight: 50}}>
+                    <Typography variant="body1" color="text.primary">
                        {desc}
                     </Typography>
                 </CardContent>

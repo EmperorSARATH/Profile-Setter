@@ -13,7 +13,7 @@ function App() {
   const Title = ["Crown Clothing", "E-commerce", "Health Care"];
   const Project_Description = {0:'This is first project',
 1 :'This is second project',
-3:'This is 3rd project'}
+2:'This is 3rd project'}
   return (
     <div className="background">
       <div className="Header-area">
@@ -24,7 +24,6 @@ function App() {
         <div id="details">
           <Details />
         </div>
-
         <div>
           <Image />
         </div>

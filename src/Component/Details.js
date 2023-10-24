@@ -16,29 +16,25 @@ const theme = createTheme({
 
 const Details = () =>{
     const card = (
-          <CardContent  sx={{ bgcolor: "#7AB2CA", opacity:0.8}}>
-            <Typography variant="h2"  color="#000000" gutterBottom>
-              Hi, Iam Sarath
-            </Typography>
-            <Typography variant="h4" component="div">
+          <CardContent  sx={{ bgcolor: "#313131"}}>
+            <Typography variant="h5"  color="white" gutterBottom>
+              <p>Hi, Iam Sarath</p>
+           <p>
             React enthusiast, welcome to my portfolio page.
             iam from India and like playing football and watching anime
             code from time to time and like to build projects.
-            </Typography>
-            <Typography sx={{ mb: 1.5 }} color="text.secondary">
+           </p>
+           <p>
               Here i have listed my skills and project that i have done  
-            </Typography>
-            <Typography variant="body2">
             Feel free to email me ukm7773@gmail.com
-              <br />
-              {'"a benevolent smile"'}
+           </p>
             </Typography>
           </CardContent>
       );
     return (
     
           <ThemeProvider theme={theme}>
-          <Box color>
+          <Box >
           <Card className='Card'>{card}</Card>
             </Box>
             </ThemeProvider>
