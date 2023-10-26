@@ -11,11 +11,11 @@ import "../App.css";
 const Projects = ({image,Title,desc}) => {
     return (
             <div className="project" >
-            <Card sx={{ maxWidth: 345, minHeight: 300, maxHeight: 330, border: '2px solid black' }}>
+            <Card sx={{ maxWidth: 345, minHeight: 350, maxHeight: 350, border: '1px solid black' }}>
                 <CardHeader
                     avatar={
                         <Avatar sx={{ bgcolor: red[500] }} aria-label="avatar">
-                            <img src = {image} sx={{maxHeight: 300, minHeight:200}} />
+                            <img src = {image} sx={{maxHeight: 300, minHeight:300}} />
                         </Avatar>
                     }
                     title = {Title}
@@ -27,7 +27,7 @@ const Projects = ({image,Title,desc}) => {
                     image={image}
                     alt="Paella dish"
                 />
-                <CardContent sx={{bgcolor: "#E0E3C5", minHeight: 50, maxHeight: 50}}>
+                <CardContent sx={{bgcolor: "#E0E3C5", minHeight: 60, maxHeight: 40}}>
                     <Typography variant="body1" color="text.primary">
                        {desc}
                     </Typography>

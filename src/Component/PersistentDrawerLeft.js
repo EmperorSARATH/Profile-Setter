@@ -18,6 +18,9 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import ConstructionSharpIcon from '@mui/icons-material/ConstructionSharp';
+import {NavLink} from 'react-router-dom';
+
 
 const drawerWidth = 240;
 
@@ -78,6 +81,10 @@ export default function PersistentDrawerLeft() {
     setOpen(false);
   };
 
+  const handleClick = (index) =>{
+    
+  }
+
   return (
     <Box sx={{ display: 'flex', marginBottom: -5 }}>
       <CssBaseline />
@@ -116,12 +123,14 @@ export default function PersistentDrawerLeft() {
         <List>
           {['Skills','Code Samples'].map((text, index) => (
             <ListItem key={text} disablePadding>
-              <ListItemButton>
+              <NavLink to="/skills">
+              <ListItemButton onClick={handleClick(index)}>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {index % 2 === 0 ? <ConstructionSharpIcon /> : <MailIcon />}
                 </ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
+              </NavLink>
             </ListItem>
           ))}
         </List>

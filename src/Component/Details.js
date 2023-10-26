@@ -16,10 +16,10 @@ const theme = createTheme({
 
 const Details = () =>{
     const card = (
-          <CardContent  sx={{ bgcolor: "#313131"}}>
+          <CardContent  sx={{ bgcolor: "#313131", marginLeft:2}}>
             <Typography variant="h5"  color="white" gutterBottom>
-              <p>Hi, Iam Sarath</p>
-           <p>
+              <p style={{fontFamily: "Georgia"}}>Hi, Iam Sarath</p>
+           <p style={{fontFamily: "Georgia"}}>
             React enthusiast, welcome to my portfolio page.
             iam from India and like playing football and watching anime
             code from time to time and like to build projects.

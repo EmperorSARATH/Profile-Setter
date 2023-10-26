@@ -3,27 +3,16 @@ import {Helmet} from "react-helmet";
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 
-
- function Refresh() {
-  return (
-    <Helmet>
-    <meta name="refresh"  http-equiv="refresh" content="5" />
-    </Helmet>
-  );
-}
-
 const Image = () => {
-    var counter = 0
-    const handleClick = () => {
-        
-        if (counter % 2 === 0) {
+    var counter = 3
+    const handleClick = () => {  
+        if (counter %  2 === 0) {
             var details = document.getElementById('details');
             details.classList.add('detail-disabled');
             var image = document.getElementById('img');
             image.classList.add('img-swift-left');
             image.classList.add("move");
-            Refresh();
-        
+
         } else {
             var details = document.getElementById('details');
             details.classList.remove('detail-disabled');
