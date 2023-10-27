@@ -69,3 +69,22 @@ h2{
  section{
     margin-bottom: 50px;
  }
+
+ .skill-list{
+    list-style-type: none;
+    display: inline-block;
+    margin-left:5rem;
+    
+ }
+
+ .Skill-card{
+    transition: all .5s ease;
+ }
+
+ .img:hover{
+    width: 310px;
+    height: 210px;
+    transition: all .5s ease;
+
+ }
+
